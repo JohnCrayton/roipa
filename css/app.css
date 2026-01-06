@@ -57,6 +57,20 @@ dd {
 	color: rgba(77, 50, 55, 1) !important;
 	font-weight: 600 !important;
 }
+.hero-section {
+    margin: auto 20px 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+	border-left: 4px solid #f8f9fa;
+}
+.section-spacing {
+    margin-bottom: 20px;
+}
+.section-box {
+    margin: 0 40px;
+    border-radius: 4px;
+}
 #container {
 	/*max-width: 1200px; 75em - old 1000px 62.5em*/
     background: none repeat scroll 0 0 rgba(141, 134, 128, 1);
@@ -85,17 +99,23 @@ dd {
 	height:0;
 	font-size: 0;
 }
-/* Shared styles */
 .drop-shadow {
-	position:relative;
-	float:left;
-	width:100%;
-	padding:1.25em;
-	margin-bottom:20px;
-	background:#fff;
-	-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
-	-moz-box-shadow:0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
-	box-shadow:0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+    position: relative;
+    width: 100%;
+    padding: 1.25em;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 
+        0 1px 4px rgba(0, 0, 0, 0.3),
+        0 0 40px rgba(0, 0, 0, 0.1) inset;
+    transition: box-shadow 0.3s ease;
+}
+
+.drop-shadow:hover {
+    box-shadow: 
+        0 2px 8px rgba(0, 0, 0, 0.4),
+        0 0 40px rgba(0, 0, 0, 0.15) inset;
 }
 .svgbg {
 	background-color: #ced1ca;
@@ -109,248 +129,203 @@ dd {
 }
 /* Lifted corners */
 .lifted {
-	-moz-border-radius:4px;
-	border-radius:4px;
+    position: relative;
+    border-radius: 4px;
 }
-.lifted:before,.lifted:after {
-	bottom:15px;
-	left:10px;
-	width:50%;
-	height:20%;
-	max-width:300px;
-	max-height:100px;
-	-webkit-box-shadow:0 15px 10px rgba(0,0,0,0.7);
-	-moz-box-shadow:0 15px 10px rgba(0,0,0,0.7);
-	box-shadow:0 15px 10px rgba(0,0,0,0.7);
-	-webkit-transform:rotate(-3deg);
-	-moz-transform:rotate(-3deg);
-	-ms-transform:rotate(-3deg);
-	-o-transform:rotate(-3deg);
-	transform:rotate(-3deg);
+
+.lifted::before,
+.lifted::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    width: 50%;
+    height: 20%;
+    max-width: 300px;
+    max-height: 100px;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
 }
-.lifted:after {
-	right:10px;
-	left:auto;
-	-webkit-transform:rotate(3deg);
-	-moz-transform:rotate(3deg);
-	-ms-transform:rotate(3deg);
-	-o-transform:rotate(3deg);
-	transform: rotate(3deg);
+
+.lifted::before {
+    left: 10px;
+    transform: rotate(-3deg);
 }
+
+.lifted::after {
+    right: 10px;
+    transform: rotate(3deg);
+}
+
 /* Curled corners */
 .curled {
-	border:1px solid #efefef;
-	-moz-border-radius:0 0 120px 120px / 0 0 6px 6px;
-	border-radius:0 0 120px 120px / 0 0 6px 6px;
+    position: relative;
+    border: 1px solid #efefef;
+    border-radius: 0 0 120px 120px / 0 0 6px 6px;
 }
-.curled:before,.curled:after {
-	bottom:12px;
-	left:10px;
-	width:50%;
-	height:55%;
-	max-width:200px;
-	max-height:100px;
-	-webkit-box-shadow:0 8px 12px rgba(0,0,0,0.5);
-	-moz-box-shadow:0 8px 12px rgba(0,0,0,0.5);
-	box-shadow:0 8px 12px rgba(0,0,0,0.5);
-	-webkit-transform:skew(-8deg) rotate(-3deg);
-	-moz-transform:skew(-8deg) rotate(-3deg);
-	-ms-transform:skew(-8deg) rotate(-3deg);
-	-o-transform:skew(-8deg) rotate(-3deg);
-	transform:skew(-8deg) rotate(-3deg);
+
+.curled::before,
+.curled::after {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    width: 50%;
+    height: 55%;
+    max-width: 200px;
+    max-height: 100px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
 }
-.curled:after {
-	right:10px;
-	left:auto;
-	-webkit-transform:skew(8deg) rotate(3deg);
-	-moz-transform:skew(8deg) rotate(3deg);
-	-ms-transform:skew(8deg) rotate(3deg);
-	-o-transform:skew(8deg) rotate(3deg);
-	transform: skew(8deg) rotate(3deg);
+
+.curled::before {
+    left: 10px;
+    transform: skew(-8deg) rotate(-3deg);
 }
-/* Perspective */
-.perspective:before {
-	left:80px;
-	bottom:5px;
-	width:50%;
-	height:35%;
-	max-width:200px;
-	max-height:50px;
-	-webkit-box-shadow:-80px 0 8px rgba(0,0,0,0.4);
-	-moz-box-shadow:-80px 0 8px rgba(0,0,0,0.4);
-	box-shadow:-80px 0 8px rgba(0,0,0,0.4);
-	-webkit-transform:skew(50deg);
-	-moz-transform:skew(50deg);
-	-ms-transform:skew(50deg);
-	-o-transform:skew(50deg);
-	transform:skew(50deg);
-	-webkit-transform-origin:0 100%;
-	-moz-transform-origin:0 100%;
-	-ms-transform-origin:0 100%;
-	-o-transform-origin:0 100%;
-	transform-origin:0 100%;
+
+.curled::after {
+    right: 10px;
+    transform: skew(8deg) rotate(3deg);
 }
-.perspective:after {
-	display: none;
+/* Perspective Shadow - Modern CSS */
+
+.perspective {
+    position: relative;
+}
+
+.perspective::before {
+    content: "";
+    position: absolute;
+    left: 80px;
+    bottom: 5px;
+    width: 50%;
+    height: 35%;
+    max-width: 200px;
+    max-height: 50px;
+    box-shadow: -80px 0 8px rgba(0, 0, 0, 0.4);
+    transform: skew(50deg);
+    transform-origin: 0 100%;
+}
+
+.perspective::after {
+    display: none;
 }
 /* Raised shadow - no pseudo-elements needed */
 .raised {
-	-webkit-box-shadow:0 20px 10px -10px rgba(0,0,0,0.5),0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
-	-moz-box-shadow:0 20px 10px -10px rgba(0,0,0,0.5),0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
-	box-shadow: 0 20px 10px -10px rgba(0,0,0,0.5),0 1px 4px rgba(255,251,187 0.3),0 0 40px rgba(0,0,0,0.1) inset;
+    box-shadow: 
+        0 20px 10px -10px rgba(0, 0, 0, 0.5),
+        0 1px 4px rgba(0, 0, 0, 0.3),
+        0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
+
 /* Curved shadows */
-.curved:before {
-	top:10px;
-	bottom:10px;
-	left:0;
-	right:50%;
-	-webkit-box-shadow:0 0 15px rgba(0,0,0,0.6);
-	-moz-box-shadow:0 0 15px rgba(0,0,0,0.6);
-	box-shadow:0 0 15px rgba(0,0,0,0.6);
-	-moz-border-radius:10px / 100px;
-	border-radius:10px / 100px;
+.curved::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    border-radius: 10px / 100px;
 }
-.curved-vt-2:before {
-	right:0;
+
+.curved-vt-2::before {
+    right: 0;
+    left: 50%;
 }
-.curved-hz-1:before {
-	top:50%;
-	bottom:0;
-	left:10px;
-	right:10px;
-	-moz-border-radius:100px / 10px;
-	border-radius:100px / 10px;
+
+.curved-hz-1::before {
+    top: 50%;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    border-radius: 100px / 10px;
 }
-.curved-hz-2:before {
-	top:0;
-	bottom:0;
-	left:10px;
-	right:10px;
-	-moz-border-radius:100px / 10px;
-	border-radius: 100px / 10px;
+
+.curved-hz-2::before {
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    border-radius: 100px / 10px;
 }
+
 /* Rotated box */
 .rotated {
-	-webkit-box-shadow:none;
-	-moz-box-shadow:none;
-	box-shadow:none;
-	-webkit-transform:rotate(-3deg);
-	-moz-transform:rotate(-3deg);
-	-ms-transform:rotate(-3deg);
-	-o-transform:rotate(-3deg);
-	transform:rotate(-3deg);
+    box-shadow: none;
+    transform: rotate(-3deg);
 }
-.rotated>:first-child:before {
-	content:"";
-	position:absolute;
-	z-index:-1;
-	top:0;
-	bottom:0;
-	left:0;
-	right:0;
-	background:#fff;
-	-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
-	-moz-box-shadow:0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
-	box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+
+.rotated > :first-child::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 
+        0 1px 4px rgba(0, 0, 0, 0.3),
+        0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
-/* Polaroids */
+/* Polaroids Gallery - Modern CSS */
+
 ul.polaroids {
-    width: 100%;
-    margin: 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 ul.polaroids li {
-    display: inline;
+    margin: 0;
 }
 
 ul.polaroids a {
     background: #fff;
-    display: inline;
-    float: left;
-    margin: 0 0 27px 30px;
-    width: auto;
+    display: block;
     padding: 10px 10px 15px;
     text-align: center;
-    font-family: "Marker Felt", sans-serif;
     text-decoration: none;
     color: #333;
     font-size: 18px;
-    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-    -webkit-transform: rotate(-2deg);
-    -webkit-transition: -webkit-transform .15s linear;
-    -moz-transform: rotate(-2deg);
+    font-family: "Comic Sans MS", "Marker Felt", cursive;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    transform: rotate(-2deg);
+    transition: transform 0.15s linear, box-shadow 0.15s ease;
+    width: auto;
 }
 
-ul.polaroids img {
-    display: block;
-    width: 168px;
-    margin-bottom: 12px;
+ul.polaroids a:hover {
+    transform: rotate(-2deg) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
 }
 
-ul.polaroids a:after {
-    content: attr(title);
-}
-
+/* Even items - rotate right */
 ul.polaroids li:nth-child(even) a {
-    -webkit-transform: rotate(2deg);
-    -moz-transform: rotate(2deg);
+    transform: rotate(2deg);
 }
 
+ul.polaroids li:nth-child(even) a:hover {
+    transform: rotate(2deg) scale(1.05);
+}
+
+/* Every 3rd item - slight lift */
 ul.polaroids li:nth-child(3n) a {
-    -webkit-transform: none;
-    position: relative;
-    top: -5px;
-    -moz-transform: none;
+    transform: translateY(-5px);
 }
 
+ul.polaroids li:nth-child(3n) a:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* Every 5th item - rotate more and shift right */
 ul.polaroids li:nth-child(5n) a {
-    -webkit-transform: rotate(5deg);
-    position: relative;
-    right: 5px;
-    -moz-transform: rotate(5deg);
+    transform: rotate(5deg) translateX(5px);
 }
 
-ul.polaroids li:nth-child(8n) a {
-    position: relative;
-    right: 5px;
-    top: 8px;
-}
-
-ul.polaroids li:nth-child(11n) a {
-    position: relative;
-    left: -5px;
-    top: 3px;
-}
-
-ul.polaroids li.messy a {
-    margin-top: -375px;
-    margin-left: 160px;
-    -webkit-transform: rotate(-5deg);
-    -moz-transform: rotate(-5deg);
-}
-
-ul.polaroids li a:hover {
-    -webkit-transform: scale(1.25);
-    -moz-transform: scale(1.25);
-    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-    position: relative;
-    z-index: 5;
-}		
-/* Add drop shadows and smooth out the transition (Safari only) */
-ul.polaroids a {
-	-webkit-transition: -webkit-transform .15s linear;
-	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-}
- 
-/* On hover, darken the shadows a bit */
-ul.polaroids a {
-	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-	box-shadow: 0 3px 6px rgba(0,0,0,.5);
+ul.polaroids li:nth-child(5n) a:hover {
+    transform: rotate(5deg) translateX(5px) scale(1.05);
 }
 
 /* ------------------------------- 
