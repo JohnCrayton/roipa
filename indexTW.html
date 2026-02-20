@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Новости РОИПА - Tailwind</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/appTW.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-gradient-to-br from-gray-800 to-gray-900">
+        <!-- Navbar -->
+        <nav class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-white text-xl font-bold">
+                    <i class="fas fa-globe"></i> РОИПА
+                </div>
+
+                <!-- Mobile menu button -->
+                <button id="menuBtn" aria-label="Toggle menu" class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Navigation menu -->
+                <ul id="navMenu"
+                    class="hidden md:flex md:gap-8 absolute md:static top-16 left-0 right-0 md:top-auto md:right-auto bg-gray-800 md:bg-transparent flex-col md:flex-row w-full md:w-auto p-4 md:p-0 uppercase text-sm font-semibold text-center md:text-left">
+                    <li class="py-2 md:py-0">
+                        <a href="indexTW.html"
+                            class="text-white hover:text-yellow-400 transition-colors block md:inline active">Новости</a>
+                    </li>
+                    <li class="py-2 md:py-0">
+                        <a href="historyTW.html"
+                            class="text-white hover:text-yellow-400 transition-colors block md:inline">История</a>
+                    </li>
+                    <li class="py-2 md:py-0">
+                        <a href="photosTW.html"
+                            class="text-white hover:text-yellow-400 transition-colors block md:inline">Фото</a>
+                    </li>
+                    <li class="py-2 md:py-0">
+                        <a href="videosTW.html"
+                            class="text-white hover:text-yellow-400 transition-colors block md:inline">Видео</a>
+                    </li>
+                    <li class="py-2 md:py-0">
+                        <a href="publicationsTW.html"
+                            class="text-white hover:text-yellow-400 transition-colors block md:inline">Публикации</a>
+                    </li>
+                    <li class="py-2 md:py-0">
+                        <a href="membershipTW.html"
+                            class="text-white hover:text-yellow-400 transition-colors block md:inline">Членство</a>
+                    </li>
+                    <li class="py-2 md:py-0">
+                        <a href="aboutTW.html"
+                            class="text-white hover:text-yellow-400 transition-colors block md:inline">О нас</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Header content -->
+    <div class="main-container">
+        <div class="contbg max-w-6xl mx-auto">
+            <!-- Hero Section -->
+            <div class="bg-white p-8 my-0 mx-8 space-y-8">
+                <div class="rounded-lg shadow-card p-8">
+                    <h3 class="font-red text-2xl mb-4">
+                        <i class="fas fa-globe text-xl mr-2"></i> Русское общество по изучению проблем Атлантиды
+                    </h3>
+                    <div class="space-y-4 text-gray-700 leading-relaxed">
+                        <p>Русское общество по изучению проблем Атлантиды (РОИПА) – общероссийское
+                            научно-исследовательское
+                            общественное объединение, занимающиеся изучением истории возникновения, развития и
+                            исчезновения
+                            древних цивилизаций.</p>
+                        <p>РОИПА было основано 27 апреля 2003 г. А.А. Ворониным, В.И. Щербаковым, А.И. Войцеховским и
+                            Г.В.
+                            Нефедьевым.</p>
+                        <p>Приоритетной задачей Общества является официальное признание атлантологии как
+                            междисциплинарной
+                            науки и включение ее в круг академических научных дисциплин.</p>
+                        <p>Проблема Атлантиды рассматривается в неразрывной связи с другими древнейшими человеческими
+                            культурами.</p>
+                        <p>РОИПА занимается издательской и исследовательской деятельностью, ведет обширную переписку с
+                            ведущими зарубежными организациями и исследователями древних цивилизаций.</p>
+                        <p>Связаться с нами можно по электронному адресу :
+                            <a href="mailto:atlantisroipa@gmail.com"
+                                class="text-blue-600 hover:text-blue-800 font-semibold"><i
+                                    class="fas fa-envelope-square mr-1"></i>atlantisroipa@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- News Section -->
+                <div class="rounded-lg shadow-card p-8">
+                    <h4 class="font-red text-xl mb-6">
+                        <i class="fas fa-info-circle mr-2"></i> Новости
+                    </h4>
+
+                    <!-- Card content -->
+                    <div class="space-y-8">
+                        <!-- News grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                                <div class="p-4 bg-gray-50">
+                                    <a href="http://svpressa.ru/post/article/169114/">
+                                        <img class="w-full h-auto border" src="img/389.jpg" alt="Interview" />
+                                    </a>
+                                </div>
+                                <div class="p-4 border-t ">
+                                    <p class="text-sm text-gray-700">Интервью президента РОИПА Георгий Нефедьева порталу
+                                        <i class="fas fa-external-link-alt ml-1"></i>
+                                        <a href="http://svpressa.ru/post/article/169114/"
+                                            class="text-blue-600 hover:text-blue-800 ml-2">http://svpressa.ru/post/article/169114/</a>.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                                <div class="p-4 bg-gray-50">
+                                    <a href="http://roipa.org/17.pdf">
+                                        <img class="w-full h-auto border" src="img/388.png" alt="Article" />
+                                    </a>
+                                </div>
+                                <div class="p-4 border-t ">
+                                    <p class="text-sm text-gray-700">Статья президента РОИПА Георгия Нефедьева,
+                                        посвященная
+                                        памяти Андрея Склярова ( <i class="fas fa-file-pdf mr-1"></i><a
+                                            href="http://roipa.org/17.pdf"
+                                            class="text-blue-600 hover:text-blue-800">Калининградская правда. № 101
+                                            (18713).
+                                            2017</a>).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News item -->
+                        <div class="border-l-4 border-yellow-500 pl-4 py-2">
+                            <p class="text-gray-700">Русское Общество по изучению проблем Атлантиды (РОИПА) провело свои
+                                1-е
+                                Жировские Чтения, посвященные научному наследию и его актуализации в современности
+                                выдающегося советского и российского ученого-химика, основателя атлантологии Николая
+                                Феодосьевича Жирова (1903-1970). Они состоялись 8 апреля 2017 г. в Музее "Серебряного
+                                века"
+                                (Дом В.Я. Брюсова, Москва). На Чтениях выступили: президент РОИПА Георгий Нефедьев, зам.
+                                координатора ОНИОО "Космопоиск" Александр Петухов, канд. геол.-мин. наук, директор
+                                Центра
+                                фундаментальных исследований МНЭПУ Александр Колтыпин и др. Были показаны фрагменты из
+                                документального фильма о Жирове "Берлин - Атлантида. По следам тайны".</p>
+                        </div>
+
+                        <p class="text-gray-700">С программой Чтений можно ознакомиться<i
+                                class="fas fa-file-pdf mx-1"></i>
+                            <a href="http://roipa.org/18.pdf" class="text-blue-600 hover:text-blue-800">здесь.</a>
+                        </p>
+
+                        <hr class="my-6 border-gray-300">
+
+                        <!-- Video grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                                <div class="p-4 bg-gray-50">
+                                    <div class="wrapper">
+                                        <div class="youtube" data-embed="f3WmQ_OnXpg">
+                                            <div class="play-button"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 border-t ">
+                                    <p class="text-sm text-gray-700">Доклад президента РОИПА Георгия Нефедьева
+                                        "Альтернативная история и атлантология" на конференции, посвященной светлой
+                                        памяти
+                                        Андрея Склярова.</p>
+                                </div>
+                            </div>
+
+                            <div class="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                                <div class="p-4 bg-gray-50">
+                                    <div class="wrapper">
+                                        <div class="youtube" data-embed="VJdmjtoIOqc">
+                                            <div class="play-button"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 border-t ">
+                                    <p class="text-sm text-gray-700">Нефедьев Георгий Владимирович (президент Русского
+                                        общества по изучению проблем Атлантиды (РОИПА)).</p>
+                                    <p class="text-sm text-gray-700 mt-2">Атлантида как проблема современной
+                                        цивилизации.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-6 border-gray-300">
+
+                        <!-- More videos grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                                <div class="p-4 bg-gray-50">
+                                    <div class="wrapper">
+                                        <div class="youtube" data-embed="-cWGQikOfzY">
+                                            <div class="play-button"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 border-t ">
+                                    <p class="text-sm text-gray-700"><strong>Атлантида как проблема современной
+                                            цивилизации</strong>
+                                        Петухов Александр Борисович (зам. координатора ОНИОО "Космопоиск").</p>
+                                    <p class="text-sm text-gray-700 mt-2">Догматика современной науки как защита от
+                                        альтернативных взглядов на нее.</p>
+                                </div>
+                            </div>
+
+                            <div class="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                                <div class="p-4 bg-gray-50">
+                                    <div class="wrapper">
+                                        <div class="youtube" data-embed="GcXS_RQ58lY">
+                                            <div class="play-button"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 border-t ">
+                                    <p class="text-sm text-gray-700"><strong>Эзотерика в цифрах</strong> Колтыпин
+                                        Александр Викторович
+                                        (канд. геол.-мин. наук, директор Центра фундаментальных исследований МНЭПУ).</p>
+                                    <p class="text-sm text-gray-700 mt-2">Приведение эзотерических датировок основных
+                                        этапов
+                                        развития Земли и человечества в соответствие с современной геохронологической
+                                        шкалой.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Section -->
+                <div class=" rounded-lg shadow-card p-8">
+                    <h5 class="font-red text-lg mb-6">Дорогие друзья и коллеги!</h5>
+                    <div class="space-y-4 text-gray-700">
+                        <p>20-го мая (18.30) в Малом зале Центрального Дома Литераторов (Б. Никитская, 53)</p>
+                        <p>Русское Общество по изучению проблем Атлантиды (РОИПА) проводит вечер памяти Александра
+                            Александровича Воронина - писателя, историка, основателя Русского Общества по изучению
+                            проблем
+                            Атлантиды.</p>
+                        <p>На вечере будут выступать друзья и коллеги Александра Воронина, известные писатели, историки,
+                            журналисты, посвятившие во многом свою жизнь самой волнующей и романтической тайне
+                            тысячелетий -
+                            поискам легендарной Атлантиды.</p>
+                        <p>Среди них: Александр Городницкий, Николай Непомнящий, Елена Сьянова, Алим Войцеховский и
+                            многие
+                            другие. Вечер ведет Георгий Нефедьев.</p>
+                        <p class="font-semibold text-red-700">Вход свободный</p>
+
+                        <div class="flex justify-center gap-4 flex-wrap mt-6">
+                            <img src="img/376.jpg"
+                                class="border rounded-lg w-32 h-40 object-cover hover:shadow-lg transition-shadow"
+                                alt="Event photo" />
+                            <img src="img/377.jpg"
+                                class="border rounded-lg w-48 h-40 object-cover hover:shadow-lg transition-shadow"
+                                alt="Event photo" />
+                            <img src="img/378.jpg"
+                                class="border rounded-lg w-40 h-40 object-cover hover:shadow-lg transition-shadow"
+                                alt="Event photo" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Congress Section -->
+                <div class=" rounded-lg shadow-card p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="border rounded-lg p-6">
+                            <p class="text-gray-700 mb-4">Здесь представлен ознакомительный видеофильм о конференции:
+                            </p>
+                            <div class="wrapper mb-4">
+                                <div class="youtube" data-embed="6kaZ87d0Ock">
+                                    <div class="play-button"></div>
+                                </div>
+                            </div>
+                            <p class="text-sm text-gray-700 mb-4">Видео наиболее ярких докладов съезда <i
+                                    class="fas fa-external-link-alt ml-1"></i>
+                                <a href="http://roipa.org/video.htm" class="text-blue-600 hover:text-blue-800">Вы можете
+                                    увидеть
+                                    здесь.</a>
+                            </p>
+                            <img src="img/375.jpg" class="w-full border rounded-lg mb-4" alt="Congress photo" />
+                            <p class="text-sm text-gray-700">В организации и проведении съезда принимали участие:
+                                Институт
+                                океанологии им. П.П. Ширшова РАН, Фонд развития науки «Третье тысячелетие»,
+                                Научно-исследовательский
+                                центр по изучению древних цивилизаций, Национальное географическое Общество России,
+                                Междисциплинарная Исследовательская Группа «Истоки цивилизаций», ОНИОО «Космопоиск»,
+                                Ассоциация
+                                «Экология Непознанного» и др.</p>
+                        </div>
+
+                        <div class="border rounded-lg p-6">
+                            <p class="text-gray-700 mb-4">20-21 апреля 2015 г. в Институте океанологии РАН им. П.П.
+                                Ширшова
+                                (Москва) прошел съезд исследователей наследия древних цивилизаций <i
+                                    class="fas fa-external-link-alt ml-1"></i>
+                                <a href="http://www.roipa.org/meet.htm"
+                                    class="text-blue-600 hover:text-blue-800">«Атлантология в
+                                    ХХI веке – перспективы развития»</a>.
+                            </p>
+                            <p class="text-gray-700 mb-4">Этот съезд, организованный Русским обществом по изучению
+                                проблем
+                                Атлантиды (РОИПА) стал уже 4-м съездом ученых и энтузиастов, посвятивших свою жизнь и
+                                исследования разрешению одной из самых волнующих загадок человеческой истории – тайне
+                                легендарной Атлантиды.</p>
+                            <p class="text-gray-700 mb-4">В отличие от предыдущих съездов, проходивших в этом же
+                                Институте в
+                                2003 и 2007 гг., прошедший съезд отличался более расширенной тематикой и статусом.</p>
+                            <p class="text-gray-700 mb-4">Впервые он имел статус международного, поскольку в нем приняли
+                                участие
+                                зарубежные ученые – коллеги и члены РОИПА из разных стран: Италии, Греции, Ирландии и
+                                других.</p>
+                            <p class="text-gray-700 mb-4">Возможно, что съезд внесет свой вклад в решение тайны
+                                тысячелетий, и
+                                исчезнувший с официальных карт нашего доисторического горизонта древний остров Атлантида
+                                займет
+                                свое полноправное и уникальное место в нашей истории.</p>
+                            <p><i class="fas fa-external-link-alt mr-1"></i>
+                                <a href="http://www.roipa.org/meet.htm"
+                                    class="text-blue-600 hover:text-blue-800">Ознакомиться с
+                                    фотоматериалами и программой съезда можно здесь.</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Press Section -->
+                <div class=" rounded-lg shadow-card p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="border rounded-lg p-6">
+                            <h5 class="font-red text-lg mb-4">Пресса о РОИПА</h5>
+                            <p class="text-gray-700 mb-4">В рубрике "ПОИСКИ, НАХОДКИ, РАЗМЫШЛЕНИЯ, ИЗОБРЕТЕНИЯ", газеты
+                                «Калининградская правда» ( г.Королёв ), от 25 сентября 2014 г. опубликовано интервью
+                                президента
+                                РОИПА Георгия Нефедьева.</p>
+                            <img src="img/111.jpg" class="w-full border rounded-lg" alt="Press photo" />
+                        </div>
+
+                        <div class="border rounded-lg p-6">
+                            <h5 class="font-red text-lg mb-4">Дорогие друзья, уважаемые коллеги и члены РОИПА!</h5>
+                            <p class="text-gray-700 mb-4">Поздравляем всех Вас с выходом второго номера альманаха о
+                                тайнах
+                                древних цивилизаций "Кронос" (Москва: "Вече", 2014; 480 с.)</p>
+                            <img src="img/112.jpg" class="w-full border rounded-lg" alt="Almanac photo" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional sections -->
+                <div class=" rounded-lg shadow-card p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="border rounded-lg p-6">
+                            <h5 class="font-red text-lg mb-4">Arcana Factor</h5>
+                            <p class="text-gray-700">Только что успешно завершилась экспедиция российского проекта
+                                "Arcana Factor" к
+                                геоглифам пустыни Наска. Были произведены уникальные фото и видео съемки. Подробнее
+                                можно посмотреть
+                                на официальном сайте проекта : <i class="fas fa-external-link-alt ml-1"></i><a
+                                    href="http://www.arcanafactor.org/ru/nazca-expedition"
+                                    class="text-blue-600 hover:text-blue-800">
+                                    Arcana Factor : Плато Наска-2014</a></p>
+                        </div>
+
+                        <div class="border rounded-lg p-6">
+                            <h5 class="font-red text-lg mb-4">Кон-Тики-XXI</h5>
+                            <p class="text-gray-700">Предлагаем Вам познакомиться с историко-географическим
+                                международным
+                                экспедиционным проектом «Кон-Тики-XXI». Для просмотра официальных ресурсов проекта Вы
+                                можете
+                                перейти по следующим ссылкам : <i class="fas fa-external-link-alt ml-1"></i><a
+                                    href="http://kon-tiki-xxi.blogspot.ru/"
+                                    class="text-blue-600 hover:text-blue-800">Блог</a>, <i
+                                    class="fas fa-external-link-alt ml-1"></i><a href="http://heyerdahl.narod2.ru/"
+                                    class="text-blue-600 hover:text-blue-800">Сайт</a>, <i
+                                    class="fas fa-external-link-alt ml-1"></i><a href="http://youtu.be/8aRw6NTyKew"
+                                    class="text-blue-600 hover:text-blue-800">Видеопрезентация</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Friends Section -->
+                <div class=" rounded-lg shadow-card p-8">
+                    <h5 class="font-red text-lg mb-6">Наши друзья</h5>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
+                        <p><i class="fas fa-external-link-alt text-blue-600 mr-2"></i><a href="http://lah.ru/"
+                                class="text-blue-600 hover:text-blue-800">Лаборатория Альтернативной Истории</a></p>
+                        <p><i class="fas fa-external-link-alt text-blue-600 mr-2"></i><a
+                                href="http://hypercomplex.xpsweb.com/"
+                                class="text-blue-600 hover:text-blue-800">Некоммерческий фонд развития исследований по
+                                финслеровой
+                                геометрии</a></p>
+                        <p><i class="fas fa-external-link-alt text-blue-600 mr-2"></i><a href="http://kosmopoisk.org/"
+                                class="text-blue-600 hover:text-blue-800">Объединение "Космопоиск"</a></p>
+                        <p><i class="fas fa-external-link-alt text-blue-600 mr-2"></i><a
+                                href="http://www.arcanafactor.org/" class="text-blue-600 hover:text-blue-800">"Arcana
+                                Factor" - скрытый фактор истории</a></p>
+                        <p><i class="fas fa-external-link-alt text-blue-600 mr-2"></i><a
+                                href="http://world-pyramids.com/ru/"
+                                class="text-blue-600 hover:text-blue-800">http://world-pyramids.com/ru/</a></p>
+                        <p><i class="fas fa-external-link-alt text-blue-600 mr-2"></i><a href="https://chudesamag.ru/"
+                                class="text-blue-600 hover:text-blue-800">журнал "Чудеса и Приключения"</a></p>
+                        <p><i class="fas fa-external-link-alt text-blue-600 mr-2"></i><a
+                                href="https://leonidy.livejournal.com/" class="text-blue-600 hover:text-blue-800">НПО
+                                "Лаборатория К"</a></p>
+                        <p>Туристическая фирма "АСГ ЭКСПРЕСС"</p>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="bg-gradient-to-r from-blue-50 to-gray-50 rounded-lg p-8 border-l-4 border-blue-500">
+                    <h5 class="font-red text-lg mb-6">Контакты</h5>
+                    <div class="space-y-3 text-gray-700">
+                        <p><i class="fas fa-envelope text-blue-600 mr-2"></i>
+                            <a href="mailto:atlantisroipa@mail.ru"
+                                class="text-blue-600 hover:text-blue-800">atlantisroipa@mail.ru</a>
+                        </p>
+                        <p><i class="fas fa-phone text-blue-600 mr-2"></i>
+                            Нефедьев Георгий Владимирович (президент РОИПА) - <a href="tel:+79165650806"
+                                class="text-blue-600 hover:text-blue-800">8(916)565-08-06</a>
+                        </p>
+                        <p><i class="fas fa-phone text-blue-600 mr-2"></i>
+                            Комогорцев Алексей Юрьевич - <a href="tel:+79104219207"
+                                class="text-blue-600 hover:text-blue-800">8(910)421-92-07</a>
+                        </p>
+                        <p><i class="fas fa-phone text-blue-600 mr-2"></i>
+                            Мирошниченко Юрий Викторович - <a href="tel:+79636348467"
+                                class="text-blue-600 hover:text-blue-800">8(963)634-84-67</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-gray-300 py-8 mt-0">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <p>&copy; 2024 РОИПА - Русское общество по изучению проблем Атлантиды</p>
+                <p class="text-sm mt-2">Версия Tailwind CSS | <a href="index.html"
+                        class="text-blue-400 hover:text-blue-300">Bootstrap версия</a></p>
+            </div>
+        </footer>
+
+        <script>
+            // Mobile menu toggle
+            document.getElementById('menuBtn').addEventListener('click', function () {
+                const menu = document.getElementById('navMenu');
+                menu.classList.toggle('hidden');
+            });
+
+            // YouTube embeds
+            (function () {
+                var youtube = document.querySelectorAll(".youtube");
+
+                for (var i = 0; i < youtube.length; i++) {
+                    (function (index) {
+                        var source = "https://img.youtube.com/vi/" + youtube[index].dataset.embed + "/sddefault.jpg";
+
+                        var image = new Image();
+                        image.src = source;
+                        image.addEventListener("load", function () {
+                            youtube[index].appendChild(image);
+                        });
+
+                        youtube[index].addEventListener("click", function () {
+                            var iframe = document.createElement("iframe");
+
+                            iframe.setAttribute(
+                                "src",
+                                "https://www.youtube.com/embed/" + this.dataset.embed + "?autoplay=1"
+                            );
+                            iframe.setAttribute("frameborder", "0");
+                            iframe.setAttribute("allowfullscreen", "");
+
+                            this.innerHTML = "";
+                            this.appendChild(iframe);
+                        });
+                    })(i);
+                }
+            })();
+        </script>
+</body>
+
+</html>

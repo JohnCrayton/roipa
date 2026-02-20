@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="container" id="container">
     <div class="row">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark bg-dark rounded mb-3">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -22,8 +22,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Новости</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">История <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">История <span class="visually-hidden">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="photos.html">Фото</a>
@@ -178,18 +178,22 @@
                         океанологии им. П. П.
                         Ширшова.</h4>
                     <span>&nbsp;</span>
-                    <div class="card-deck text-center">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <img src="img/87.jpg" class="img-thumbnail" alt=""/>
+                    <div class="row g-4 text-center">
+                        <div class="col-md-6">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <img src="img/87.jpg" class="img-thumbnail" alt=""/>
+                                </div>
+                                <div class="card-footer"><cite>А. А. Воронин</cite></div>
                             </div>
-                            <div class="card-footer"><cite>А. А. Воронин</cite></div>
                         </div>
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <img src="img/88.jpg" class="img-thumbnail" alt=""/>
+                        <div class="col-md-6">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <img src="img/88.jpg" class="img-thumbnail" alt=""/>
+                                </div>
+                                <div class="card-footer"><cite>А. А. Воронин, Г. В. Нефедьев</cite></div>
                             </div>
-                            <div class="card-footer"><cite>А. А. Воронин, Г. В. Нефедьев</cite></div>
                         </div>
                     </div>
                     <span>&nbsp;</span>
@@ -299,6 +303,15 @@
     </div>
 </div>
 <!-- /container -->
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+        <p>&copy; 2024 РОИПА - Русское общество по изучению проблем Атлантиды</p>
+        <p class="small mt-2">Bootstrap версия | <a href="historyTW.html" class="text-info text-decoration-none">Версия Tailwind CSS</a></p>
+    </div>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>

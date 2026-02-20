@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>История РОИПА - Tailwind</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/appTW.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-gradient-to-br from-gray-800 to-gray-900">
+        <!-- Navbar -->
+        <nav class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-white text-xl font-bold">
+                    <i class="fas fa-globe"></i> РОИПА
+                </div>
+
+                <!-- Mobile menu button -->
+                <button id="menuBtn" class="md:hidden text-white text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Navigation menu -->
+                <ul id="navMenu"
+                    class="hidden md:flex md:gap-8 absolute md:static top-16 left-0 right-0 md:top-auto md:right-auto bg-gray-800 md:bg-transparent flex-col md:flex-row w-full md:w-auto p-4 md:p-0 uppercase text-sm font-semibold text-center md:text-left">
+                    <li class="py-2 md:py-0">
+                        <a href="indexTW.html"
+                            class="text-white hover:text-yellow-400 transition-colors block md:inline">Новости</a>
+                    </li>
+                    <li class="py-2 md:py-0">
+                        <a href="historyTW.html"
+                            class="text-white hover:text-yellow-400 transition-colors block md:inline active">История</a>
+                    </li>
+                    <li class="py-2 md:py-0">
+                        <a href="photosTW.html"
+                            class="text-white hover:text-yellow-400 transition-colors block md:inline">Фото</a>
+                    </li>
+                    <li class="py-2 md:py-0">
+                        <a href="videosTW.html"
+                            class="text-white hover:text-yellow-400 transition-colors block md:inline">Видео</a>
+                    </li>
+                    <li class="py-2 md:py-0">
+                        <a href="publicationsTW.html"
+                            class="text-white hover:text-yellow-400 transition-colors block md:inline">Публикации</a>
+                    </li>
+                    <li class="py-2 md:py-0">
+                        <a href="membershipTW.html"
+                            class="text-white hover:text-yellow-400 transition-colors block md:inline">Членство</a>
+                    </li>
+                    <li class="py-2 md:py-0">
+                        <a href="aboutTW.html"
+                            class="text-white hover:text-yellow-400 transition-colors block md:inline">О нас</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-container">
+        <div class="max-w-6xl mx-auto px-4 py-8 space-y-8">
+            <!-- Title Section -->
+            <div class="bg-white rounded-lg shadow-card p-8">
+                <h4 class="font-red text-2xl mb-4">
+                    <i class="fas fa-globe text-xl mr-2"></i> РУССКОЕ ОБЩЕСТВО ПО ИЗУЧЕНИЮ ПРОБЛЕМ АТЛАНТИДЫ (РОИПА)
+                </h4>
+                <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <p>В начале 1990-х гг. в Москве впервые возникло сообщество единомышленников, занимающихся проблемой
+                        Атлантиды и другими древними допотопными, мифическими цивилизациями, чье существование ставится
+                        под сомнение исторической наукой. В основании его стояли известные писатели и ученые: Владимир
+                        Иванович Щербаков, Александр Петрович Казанцев, Николай Николаевич Непомнящий, Александр
+                        Моисеевич Городницкий, Алим Иванович Войцеховский, Игорь Александрович Резанов, главный редактор
+                        газеты «Мастер» Геннадий Васильевич Максимович, писатель-судомоделист Михаил Аполлинарьевич
+                        Михайлов и член Союза журналистов гор. Москвы Александр Александрович Воронин.</p>
+
+                    <p>РОИПА было основано 27 апреля 2003 г. А.А. Ворониным, В.И. Щербаковым, А.И. Войцеховским и Г.В.
+                        Нефедьевым. С момента своего основания РОИПА развернуло активную научно-исследовательскую работу по
+                        поиску исторических свидетельств и артефактов, подтверждающих факт существования великих
+                        працивилизаций прошлого.</p>
+
+                    <p>22 мая 2003 г. в Москве в помещении Института океанологии РАН им. П. П. Ширшова был проведен Второй
+                        Российский съезд атлантологов, посвященный 100-летию со дня рождения выдающегося российского
+                        атлантолога и ученого Николая Феодосьевича Жирова.</p>
+
+                    <p>26-27 ноября 2007 г. в помещении Института океанологии РАН им. П. П. Ширшова собрался большой форум,
+                        который объединил известных российских ученых и исследователей со всей России и стран СНГ – Третий
+                        Российский съезд атлантологов.</p>
+
+                    <p>6-го ноября 2012 г. безвременно ушел из жизни президент РОИПА Александр Александрович Воронин. Новым
+                        президентом Общества стал Георгий Владимирович Нефедьев.</p>
+                </div>
+            </div>
+
+            <!-- Photos Grid - 3 columns -->
+            <div class="space-y-8">
+                <!-- Card 1 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/85.jpg" class="w-full h-auto border rounded" alt="Фото 1" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">Г.В. Нефедьев, В.И. Щербаков, А.А.
+                                Воронин. Центральный Дом журналиста. 2002 г.</p>
+                        </div>
+                    </div>
+
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/86.jpg" class="w-full h-auto border rounded" alt="Фото 2" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">Второй Российский съезд атлантологов.
+                                Москва, 22 мая 2003 г. Институт океанологии им. П. П. Ширшова.</p>
+                            <p class="text-sm text-gray-600 italic text-center mt-2">Слева направо: А.А. Воронин, Г.В.
+                                Нефедьев, А.И. Войцеховский</p>
+                        </div>
+                    </div>
+
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/87.jpg" class="w-full h-auto border rounded" alt="Фото 3" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">А. А. Воронин</p>
+                            <p class="text-xs text-gray-500 text-center mt-2">Третий Российский съезд артлантологов</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/88.jpg" class="w-full h-auto border rounded" alt="Фото 4" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">А. А. Воронин, Г. В. Нефедьев</p>
+                            <p class="text-xs text-gray-500 text-center mt-2">Третий Российский съезд артлантологов</p>
+                        </div>
+                    </div>
+
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/89.jpg" class="w-full h-auto border rounded" alt="Фото 5" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">А. А. Алмистов, А. А. Воронин, Г. В.
+                                Нефедьев, А. И. Войцеховский</p>
+                            <p class="text-xs text-gray-500 text-center mt-2">Третий Российский съезд артлантологов</p>
+                        </div>
+                    </div>
+
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/90.jpg" class="w-full h-auto border rounded" alt="Фото 6" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">А.А. Воронин. Фотоколаж.</p>
+                            <p class="text-xs text-gray-500 text-center mt-2">Автор Эстэра Улитина</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tasks Section -->
+            <div class="bg-white rounded-lg shadow-card p-8">
+                <h4 class="font-red text-xl mb-6">Приоритетными задачами РОИПА являются:</h4>
+                <ul class="space-y-4 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-circle-dot text-red-800 mt-1 flex-shrink-0"></i>
+                        <span>Изучение и поиски Атлантиды, а также всего комплекса древних працивилизаций, истории их
+                            возникновения, развития и исчезновения;</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-circle-dot text-red-800 mt-1 flex-shrink-0"></i>
+                        <span>Создание корректной, новой концепции глобального исторического процесса, реконструкция
+                            подлинной истории человечества;</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-circle-dot text-red-800 mt-1 flex-shrink-0"></i>
+                        <span>Создание и развитие на базе междисциплинарных исследований науки атлантологии и включение ее
+                            в круг академических научных дисциплин;</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-circle-dot text-red-800 mt-1 flex-shrink-0"></i>
+                        <span>Создание Музея Атлантиды им. Н. Ф. Жирова для сохранения мирового и российского
+                            атлантологического наследия.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="bg-gradient-to-r from-blue-50 to-gray-50 rounded-lg p-8 border-l-4 border-blue-500">
+                <h5 class="font-red text-lg mb-4">Дополнительная информация</h5>
+                <div class="space-y-3 text-gray-700">
+                    <p>С 2012 г. РОИПА совместно с издательским домом «Вече» приступает к изданию нового иллюстративного
+                        Альманаха о тайнах древних цивилизаций «Кронос», посвященный по преимуществу Атлантиде и другим
+                        працивилизациям.</p>
+                    <p>РОИПА ведет активную поисковую и исследовательскую работу, готовит и проводит различные мероприятия,
+                        как научного, так и популяризаторского, просветительского характера.</p>
+                    <p>Фондом было организовано в различные части света экспедиции по поиску остатков древнейших культур и
+                        練武цивилизаций. В ходе этих экспедиций были исследованы интересные с точки зрения атлантологии
+                        географические точки планеты: Азорские и Канарские острова, Понапе, Йонагуни, Перу, Боливия,
+                        Греция, Крит, Мальта, Египет, Мексика, Босния, Эфиопия, Кольский полуостров, о. Пасхи и др.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2024 РОИПА - Русское общество по изучению проблем Атлантиды</p>
+            <p class="text-sm mt-2">Версия Tailwind CSS | <a href="history.html" class="text-blue-400 hover:text-blue-300">Bootstrap версия</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menuBtn').addEventListener('click', function () {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
