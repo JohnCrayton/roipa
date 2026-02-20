@@ -20,7 +20,7 @@
                 </div>
 
                 <!-- Mobile menu button -->
-                <button id="menuBtn" class="md:hidden text-white text-2xl">
+                <button id="menuBtn" aria-label="Toggle menu" class="md:hidden text-white text-2xl">
                     <i class="fas fa-bars"></i>
                 </button>
 
@@ -62,141 +62,133 @@
 
     <!-- Main content -->
     <div class="main-container">
-        <div class="max-w-6xl mx-auto px-4 py-8 space-y-8">
-            <!-- Title Section -->
-            <div class="bg-white rounded-lg shadow-card p-8">
-                <h3 class="font-red text-2xl mb-4">Дорогие друзья, коллеги и члены РОИПА!</h3>
-                <div class="space-y-4 text-gray-700">
-                    <p>4 апреля 2014 г. в помещении Музея "Серебряного века" ("Дом В.Я. Брюсова") состоялась
-                        презентация 2-го выпуска "Альманаха о тайнах древних цивилизаций - КРОНОС"</p>
-                    <p>Мы рады представить фотоотчёт, запечатлевший в лицах тех, кто принял участие в мероприятии, и
-                        чьими усилиями и творчеством стал возможен выход второго выпуска:</p>
-                </div>
-            </div>
-
-            <!-- First grid - 3 columns -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
-                    <div class="p-4 bg-gray-50">
-                        <img src="img/281.jpg" class="w-full h-auto" alt="Фото 1" />
-                    </div>
-                    <div class="p-4 border-t">
-                        <p class="text-sm text-gray-600 italic text-center">Фото с презентации</p>
+        <div class="contbg max-w-6xl mx-auto">
+            <div class="bg-white p-8 my-0 mx-8 space-y-8">
+                <!-- Title Section -->
+                <div class="bg-white rounded-lg shadow-card p-8">
+                    <h3 class="font-red text-2xl mb-4">Дорогие друзья, коллеги и члены РОИПА!</h3>
+                    <div class="space-y-4 text-gray-700">
+                        <p>4 апреля 2014 г. в помещении Музея "Серебряного века" ("Дом В.Я. Брюсова") состоялась
+                            презентация 2-го выпуска "Альманаха о тайнах древних цивилизаций - КРОНОС"</p>
+                        <p>Мы рады представить фотоотчёт, запечатлевший в лицах тех, кто принял участие в мероприятии, и
+                            чьими усилиями и творчеством стал возможен выход второго выпуска:</p>
                     </div>
                 </div>
-                <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
-                    <div class="p-4 bg-gray-50">
-                        <img src="img/282.jpg" class="w-full h-auto" alt="Фото 2" />
+                <!-- First grid - 3 columns -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/281.jpg" class="w-full h-auto" alt="Фото 1" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">Фото с презентации</p>
+                        </div>
                     </div>
-                    <div class="p-4 border-t">
-                        <p class="text-sm text-gray-600 italic text-center">Фото с презентации</p>
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/282.jpg" class="w-full h-auto" alt="Фото 2" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">Фото с презентации</p>
+                        </div>
                     </div>
-                </div>
-                <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
-                    <div class="p-4 bg-gray-50">
-                        <img src="img/283.jpg" class="w-full h-auto" alt="Фото 3" />
-                    </div>
-                    <div class="p-4 border-t">
-                        <p class="text-sm text-gray-600 italic text-center">Фото с презентации</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Second grid - 3 columns with captions -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
-                    <div class="p-4 bg-gray-50">
-                        <img src="img/284.jpg" class="w-full h-auto border rounded" alt="Фото" />
-                    </div>
-                    <div class="p-4 border-t">
-                        <p class="text-sm text-gray-600 italic text-center">Директор Музея "Серебряного века" 
-                            («Дома В.Я. Брюсова») Михаил Шапошников</p>
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/283.jpg" class="w-full h-auto" alt="Фото 3" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">Фото с презентации</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
-                    <div class="p-4 bg-gray-50">
-                        <img src="img/285.jpg" class="w-full h-auto border rounded" alt="Фото" />
+                <!-- Second grid - 3 columns with captions -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/284.jpg" class="w-full h-auto border rounded" alt="Фото" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">Директор Музея "Серебряного века"
+                                («Дома В.Я. Брюсова») Михаил Шапошников</p>
+                        </div>
                     </div>
-                    <div class="p-4 border-t">
-                        <p class="text-sm text-gray-600 italic text-center">Зам. координатора ООО «Космопоиск», 
-                            член Координационного Совета РОИПА Александр Петухов</p>
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/285.jpg" class="w-full h-auto border rounded" alt="Фото" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">Зам. координатора ООО «Космопоиск»,
+                                член Координационного Совета РОИПА Александр Петухов</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
-                    <div class="p-4 bg-gray-50">
-                        <img src="img/286.jpg" class="w-full h-auto border rounded" alt="Фото" />
-                    </div>
-                    <div class="p-4 border-t">
-                        <p class="text-sm text-gray-600 italic text-center">Художник Юрий Немцев - автор картины 
-                            на обложке «Кроноса»</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Third grid - 3 columns -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
-                    <div class="p-4 bg-gray-50">
-                        <img src="img/290.jpg" class="w-full h-auto border rounded" alt="Фото" />
-                    </div>
-                    <div class="p-4 border-t">
-                        <p class="text-sm text-gray-600 italic text-center">Директор оптического театра, 
-                            член РОИПА Сергей Зорин</p>
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/286.jpg" class="w-full h-auto border rounded" alt="Фото" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">Художник Юрий Немцев - автор картины
+                                на обложке «Кроноса»</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
-                    <div class="p-4 bg-gray-50">
-                        <img src="img/292.jpg" class="w-full h-auto border rounded" alt="Фото" />
+                <!-- Third grid - 3 columns -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/290.jpg" class="w-full h-auto border rounded" alt="Фото" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">Директор оптического театра,
+                                член РОИПА Сергей Зорин</p>
+                        </div>
                     </div>
-                    <div class="p-4 border-t">
-                        <p class="text-sm text-gray-600 italic text-center">Президент РОИПА, главный редактор 
-                            альманаха «Кронос» Георгий Нефедьев</p>
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/292.jpg" class="w-full h-auto border rounded" alt="Фото" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">Президент РОИПА, главный редактор
+                                альманаха «Кронос» Георгий Нефедьев</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
-                    <div class="p-4 bg-gray-50">
-                        <img src="img/291.jpg" class="w-full h-auto border rounded" alt="Фото" />
-                    </div>
-                    <div class="p-4 border-t">
-                        <p class="text-sm text-gray-600 italic text-center">Историк, член Координационного Совета РОИПА 
-                            Алексей Подъяпольский</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Fourth grid - 3 columns -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
-                    <div class="p-4 bg-gray-50">
-                        <img src="img/285.jpg" class="w-full h-auto border rounded" alt="Фото" />
-                    </div>
-                    <div class="p-4 border-t">
-                        <p class="text-sm text-gray-600 italic text-center">Выпускающий редактор альманаха 
-                            Николай Смирнов (издательство «Вече»)</p>
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/291.jpg" class="w-full h-auto border rounded" alt="Фото" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">Историк, член Координационного Совета РОИПА
+                                Алексей Подъяпольский</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
-                    <div class="p-4 bg-gray-50">
-                        <img src="img/288.jpg" class="w-full h-auto border rounded" alt="Фото" />
+                <!-- Fourth grid - 3 columns -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/285.jpg" class="w-full h-auto border rounded" alt="Фото" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">Выпускающий редактор альманаха
+                                Николай Смирнов (издательство «Вече»)</p>
+                        </div>
                     </div>
-                    <div class="p-4 border-t">
-                        <p class="text-sm text-gray-600 italic text-center">Вице-президент РОИПА 
-                            Юрий Мирошниченко</p>
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/288.jpg" class="w-full h-auto border rounded" alt="Фото" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">Вице-президент РОИПА
+                                Юрий Мирошниченко</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
-                    <div class="p-4 bg-gray-50">
-                        <img src="img/289.jpg" class="w-full h-auto border rounded" alt="Фото" />
-                    </div>
-                    <div class="p-4 border-t">
-                        <p class="text-sm text-gray-600 italic text-center">Научный сотрудник вычислительного центра 
-                            им. А.А. Дородницына РАН, член РОИПА Василий Шевченко</p>
+                    <div class="border rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow bg-white">
+                        <div class="p-4 bg-gray-50">
+                            <img src="img/289.jpg" class="w-full h-auto border rounded" alt="Фото" />
+                        </div>
+                        <div class="p-4 border-t">
+                            <p class="text-sm text-gray-600 italic text-center">Научный сотрудник вычислительного центра
+                                им. А.А. Дородницына РАН, член РОИПА Василий Шевченко</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -204,7 +196,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 py-8 mt-12">
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-0">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <p>&copy; 2024 РОИПА - Русское общество по изучению проблем Атлантиды</p>
             <p class="text-sm mt-2">Версия Tailwind CSS | <a href="photos.html" class="text-blue-400 hover:text-blue-300">Bootstrap версия</a></p>
